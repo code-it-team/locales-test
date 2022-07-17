@@ -1,5 +1,5 @@
 export enum LOCALES {
-  ENGLISH = "en-US",
-  TURKISH = "tr-TR",
-  ARABIC = "ar-SY",
+  "en-US" = "en-US",
+  "tr-TR" = "tr-TR",
+  "ar-SY" = "ar-SY",
 }

@@ -1854,6 +1854,21 @@
     minimatch "^3.1.2"
     strip-json-comments "^3.1.1"
 
+"@fontsource/aileron@^4.5.3":
+  version "4.5.3"
+  resolved "https://registry.yarnpkg.com/@fontsource/aileron/-/aileron-4.5.3.tgz#cc6b1f1fe5505d4a83acccd909f3858c67224dd8"
+  integrity sha512-pFqJqwhvNSb5bkrMRCJ66eyxtosPtR0THTfti6l1sl9vBWs7kQlu0mzXPdqr9qyLy82OnzsQhBGYCBszbbiV/w==
+
+"@fontsource/almarai@^4.5.7":
+  version "4.5.7"
+  resolved "https://registry.yarnpkg.com/@fontsource/almarai/-/almarai-4.5.7.tgz#1e11fb8a38627baaf8dd244ec5b5bda260df663c"
+  integrity sha512-y4pHYO1e8IwKqH/M4EfbsDOoI9dvW12bzNFEs8eT6IDCpWhwGHZPTKdnQPucB5JaK/6atUd+HaQddB7hfnhZKg==
+
+"@fontsource/inter@^4.5.11":
+  version "4.5.11"
+  resolved "https://registry.yarnpkg.com/@fontsource/inter/-/inter-4.5.11.tgz#3c45014821e8c82b247a291f1944dd2764a2d1ed"
+  integrity sha512-toizzQkfXL8YJcG/f8j3EYXYGQe4OxiDEItThSigvHU+cYNDw8HPp3wLYQX745hddsnHqOGCM4exitFSBOU8+w==
+
 "@formatjs/cli@^5.0.2":
   version "5.0.2"
   resolved "https://registry.yarnpkg.com/@formatjs/cli/-/cli-5.0.2.tgz#1df27fc52aae0ddcfc34ac0d2d8504fe244e6f0f"
