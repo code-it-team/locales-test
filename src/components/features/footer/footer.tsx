@@ -12,7 +12,7 @@ export const Footer = () => {
     <Box
       alignItems="center"
       as="footer"
-      bg={useColorModeValue("gray.100", "gray.600")}
+      bg={useColorModeValue("gray.100", "gray.700")}
       color={useColorModeValue("gray.500", "gray.200")}
       display="flex"
       flexDir="column"
@@ -30,7 +30,7 @@ export const Footer = () => {
           <FormattedMessage defaultMessage="Honest" id="6yymIa" />
         </Heading>
       </Box>
-      <Text fontSize="md">
+      <Text fontSize="sm">
         <FormattedMessage
           defaultMessage="© {year} <b>code-it</b> Team. All rights reserved"
           id="B2B8xz"

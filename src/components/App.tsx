@@ -7,8 +7,10 @@ import {
   Container,
   extendTheme,
   Flex,
+  StyleProps,
   Text,
 } from "@chakra-ui/react";
+import { mode, StyleFunctionProps } from "@chakra-ui/theme-tools";
 import * as React from "react";
 import { IntlProvider, ReactIntlErrorCode } from "react-intl";
 import { Route, Routes } from "react-router-dom";
@@ -20,6 +22,7 @@ import { HomePage } from "./features/home-page/HomePage";
 
 export const App = () => {
   const { locale } = useLocale("en-US");
+
   const theme = extendTheme({
     fonts: {
       body: "'Aileron','Almarai', sans-serif",

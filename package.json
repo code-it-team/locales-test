@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@chakra-ui/react": "^2.2.4",
+    "@chakra-ui/theme-tools": "^2.0.5",
     "@emotion/react": "^11.0.0",
     "@emotion/styled": "^11.0.0",
     "@fontsource/aileron": "^4.5.3",
