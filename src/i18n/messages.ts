@@ -4,13 +4,13 @@ import * as trMessages from "./lang/tr.json";
 import { LOCALES } from "./locales";
 
 export const MESSAGES = {
-  [LOCALES["en-US"]]: {
+  [LOCALES.English]: {
     ...enMessages,
   },
-  [LOCALES["tr-TR"]]: {
+  [LOCALES.Turkish]: {
     ...trMessages,
   },
-  [LOCALES["ar-SY"]]: {
+  [LOCALES.Arabic]: {
     ...arMessages,
   },
 };

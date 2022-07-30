@@ -7,46 +7,38 @@ import {
   Container,
   extendTheme,
   Flex,
-  StyleProps,
   Text,
 } from "@chakra-ui/react";
-import { mode, StyleFunctionProps } from "@chakra-ui/theme-tools";
 import * as React from "react";
-import { IntlProvider, ReactIntlErrorCode } from "react-intl";
+import { FormattedMessage, IntlProvider } from "react-intl";
 import { Route, Routes } from "react-router-dom";
 
 import { useLocale } from "../hooks/useLocale";
 import { MESSAGES } from "../i18n/messages";
 import { ROUTES } from "../utils/routes";
 import { HomePage } from "./features/home-page/HomePage";
+import { LostItemFormPage } from "./features/lost-item-form-page/LostItemFormPage";
 
 export const App = () => {
-  const { locale } = useLocale("en-US");
-
   const theme = extendTheme({
     fonts: {
       body: "'Aileron','Almarai', sans-serif",
       heading: "'Inter', 'Almarai', sans-serif",
     },
   });
+  const { locale } = useLocale();
 
   return (
     <ChakraProvider theme={theme}>
-      <IntlProvider
-        defaultLocale={locale}
-        key={locale}
-        locale={locale}
-        messages={MESSAGES[locale]}
-        onError={(error) => {
-          if (error.code === ReactIntlErrorCode.MISSING_TRANSLATION) {
-            return;
-          }
-
-          throw error;
-        }}
-      >
+      <IntlProvider key={locale} locale={locale} messages={MESSAGES[locale]}>
         <Routes>
-          <Route element={<HomePage />} path={ROUTES["/"]} />
+          <Route element={<HomePage />} path={ROUTES["/"]}>
+            <Route element={<div>----</div>} index />
+            <Route
+              element={<LostItemFormPage />}
+              path={ROUTES["submit-lost-item"]}
+            />
+          </Route>
           <Route
             element={
               <Container>
@@ -55,7 +47,12 @@ export const App = () => {
                   height="100vh"
                   justifyContent="center"
                 >
-                  <Text fontSize="3xl">404 Page not found</Text>
+                  <Text fontSize="3xl">
+                    <FormattedMessage
+                      defaultMessage="404 Page not found"
+                      id="m8h31M"
+                    />
+                  </Text>
                 </Flex>
               </Container>
             }

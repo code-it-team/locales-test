@@ -21,8 +21,10 @@ export const ColorModeSwitcher: React.FC<ColorModeSwitcherProps> = (props) => {
     <Tooltip
       label={intl.formatMessage({
         defaultMessage: "Switch themes",
-        id: "KqS2Br",
+        description: "theme switcher tooltip in header",
+        id: "qG/do6",
       })}
+      placement="bottom-start"
     >
       <IconButton
         aria-label={`Switch to ${text} mode`}

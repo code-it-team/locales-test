@@ -1,5 +1,7 @@
-export enum LOCALES {
-  "en-US" = "en-US",
-  "tr-TR" = "tr-TR",
-  "ar-SY" = "ar-SY",
-}
+export const LOCALES = {
+  "English": "en-US",
+  "Turkish": "tr-TR",
+  "Arabic": "ar-SY",
+};
+
+export type LocalKey = keyof typeof LOCALES;

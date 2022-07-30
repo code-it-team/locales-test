@@ -35,7 +35,7 @@ export const Footer = () => {
           defaultMessage="© {year} <b>code-it</b> Team. All rights reserved"
           id="B2B8xz"
           values={{
-            b: (chunks) => <b>{chunks}</b>,
+            b: (chunks) => <strong>{chunks}</strong>,
             year: new Date().getFullYear(),
           }}
         />

@@ -1,4 +1,5 @@
 export enum ROUTES {
   "/" = "/",
-  "/settings" = "/settings",
+  "settings" = "settings",
+  "submit-lost-item" = "submit-lost-item",
 }
